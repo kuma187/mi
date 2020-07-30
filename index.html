@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.13.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>2020年心情日历</h2>
+        <h4>~点击下方图标记录当日心情~</h4>
+        <p>选择心情图标</p>
+        <div class="moods-container">
+            <button class="mood mood_1" id="mood_1">
+                <i class="far fa-laugh"></i>
+            </button>
+            <button class="mood mood_2" id="mood_2">
+                <i class="far fa-smile"></i>
+            </button>
+            <button class="mood mood_3" id="mood_3">
+                <i class="far fa-meh"></i>
+            </button>
+            <button class="mood mood_4" id="mood_4">
+                <i class="far fa-frown"></i>
+            </button>
+            <button class="mood mood_5" id="mood_5">
+                <i class="far fa-sad-tear"></i>
+            </button>
+        </div>
+        <p>然后点击下方日历</p>
+        <button class="btn_action randomize" id="randomize">
+            <i class="fas fa-random"></i>
+        </button>
+        <button class="btn_action clear" id="clear">
+            <i class="fas fa-sync"></i>
+        </button>
+        <div class="calendar" id="calendar">
+ 
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

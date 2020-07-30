@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --mood-color-1:#2d6b5f;
+    --mood-color-2:#72e3a6;
+    --mood-color-3:#dff4c7;
+    --mood-color-4:#edbf98;
+    --mood-color-5:#ea3d36;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    
+}
+.container > h2,h4{
+    font-size: 20px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+.container > p{
+    font-size: 14px;
+    padding: 6px 0;
+}
+.container .moods-container{
+    padding: 15px;
+}
+
+.mood{
+    outline: none;
+    background-color: #fff;
+    border: 0;
+    border-radius: 50%;
+    color: #000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    line-height: 20px;
+    margin: 0 8px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+
+}
+.mood_1{
+    color: var(--mood-color-1);
+}
+.mood_2{
+    color: var(--mood-color-2);
+}
+.mood_3{
+    color: var(--mood-color-3);
+}
+
+.mood_4{
+    color: var(--mood-color-4);
+}
+
+.mood_5{
+    color: var(--mood-color-5);
+}
+
+
+
+.mood.selected{
+    background-color: currentColor;
+    
+}
+.mood.selected i{
+    color: #fff;
+}
+.btn_action{
+    position: absolute;
+    right:0px;
+    border: none;
+    padding: 8px 10px;
+    outline: none;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+.randomize{
+    top: 80px;   
+    background-color: var(--mood-color-2);
+}
+.clear{
+    top:120px;
+}
+.calendar{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px 0;
+    grid-gap: 15px;
+    max-width: 80%;
+    width: 80%;
+    text-align: center;
+}
+
+.calendar .months .week_days_container{
+    display: grid;
+    padding: 0 10%;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.calendar .months .days_container{
+    display: grid;
+   padding: 0 10%;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+.calendar .months .days_container .days{
+    margin: 8px 0;
+}
+.calendar .months .days_container .days .circle{
+    background-color: #888;
+    color: white;
+    font-size: 16px;
+   padding: 8px;
+    width: 15px;
+    height: 15px;
+
+    border-radius: 50%;
+
+}
+.calendar .months .days_container .days .circle:hover{
+    cursor: pointer;
+}
